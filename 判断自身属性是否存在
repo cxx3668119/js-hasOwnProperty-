@@ -1,0 +1,11 @@
+var o = new Object();
+o.prop = 'exists';
+
+function changeO() {
+  o.newprop = o.prop;
+  delete o.prop;
+}
+
+o.hasOwnProperty('prop');  // true
+changeO();
+o.hasOwnProperty('prop');  // false
