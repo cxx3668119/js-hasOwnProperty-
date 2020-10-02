@@ -1,0 +1,14 @@
+# js-hasOwnProperty-
+hasOwnProperty()
+var buz = {
+    fog: 'stack'
+};
+
+for (var name in buz) {
+    if (buz.hasOwnProperty(name)) {
+        alert("this is fog (" + name + ") for sure. Value: " + buz[name]);
+    }
+    else {
+        alert(name); // toString or something else
+    }
+}
